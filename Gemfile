@@ -17,6 +17,17 @@ group :development do
 end
 
 #
+group :development, :test do
+  gem 'sqlite3'
+end
+
+#
+group :production do
+  # gems specifically for Heroku go here
+  gem 'pg'
+end
+
+#
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
